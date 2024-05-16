@@ -45,8 +45,6 @@ properties:
      directives:
        description: Configure Git
        allowPrerelease: true
-     dependsOn:
-       - git
      settings:
         UserName: "dyigitbas"
         ConfigLocation: "Global"
@@ -56,8 +54,6 @@ properties:
      directives:
        description: Configure Git
        allowPrerelease: true
-     dependsOn:
-       - git
      settings:
         UserEmail: "dyigitbas@microsoft.com"
         ConfigLocation: "Global"
