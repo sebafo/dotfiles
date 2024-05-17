@@ -3,34 +3,42 @@ properties:
   configurationVersion: 0.2.0
   resources:
    ### Set theme to Dark
-   - resource: Microsoft.Windows.Developer/EnableDarkMode
-     directives:
-       description: Set theme to Dark
-       allowPrerelease: true
-     settings:
-       RestartExplorer: true
+    - resource: Microsoft.Windows.Developer/EnableDarkMode
+      directives:
+        description: Set theme to Dark
+        allowPrerelease: true
+      settings:
+        RestartExplorer: true
+   ### Install Microsoft PowerToys
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: PowerToys
+      directives:
+        description: Install Microsoft PowerToys
+        allowPrerelease: true
+      settings:
+        id: Microsoft.PowerToys
    ### Install Oh My Posh
-   - resource: Microsoft.WinGet.DSC/WinGetPackage
-     id: OMP
-     directives:
-       description: Install Oh My Posh
-       allowPrerelease: true
-     settings:
-       id: JanDeDobbeleer.OhMyPosh
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: OMP
+      directives:
+        description: Install Oh My Posh
+        allowPrerelease: true
+      settings:
+        id: JanDeDobbeleer.OhMyPosh
    ### Git Configure Name
-   - resource: GitDsc/GitConfigUserName
-     directives:
-       description: Configure Git
-       allowPrerelease: true
+    - resource: GitDsc/GitConfigUserName
+      directives:
+        description: Configure Git
+        allowPrerelease: true
      settings:
         UserName: "dyigitbas"
         ConfigLocation: "Global"
    ### Git Configure Email
-   - resource: GitDsc/GitConfigUserEmail
-     directives:
-       description: Configure Git
-       allowPrerelease: true
-     settings:
+    - resource: GitDsc/GitConfigUserEmail
+      directives:
+        description: Configure Git
+        allowPrerelease: true
+      settings:
         UserEmail: "dyigitbas@microsoft.com"
         ConfigLocation: "Global"
    
