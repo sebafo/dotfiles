@@ -39,6 +39,6 @@ properties:
         description: Configure Git
         allowPrerelease: true
       settings:
-        UserEmail: "dyigitbas@microsoft.com"
+        UserEmail: "89029269+dyigitbas@users.noreply.github.com"
         ConfigLocation: "Global"
    
