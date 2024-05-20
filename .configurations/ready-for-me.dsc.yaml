@@ -17,14 +17,6 @@ properties:
         allowPrerelease: true
       settings:
         RestartExplorer: true
-    ### Install Oh My Posh
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: OMP
-      directives:
-        description: Install Oh My Posh
-        allowPrerelease: true
-      settings:
-        id: JanDeDobbeleer.OhMyPosh
     ### Git Configure Name
     - resource: GitDsc/GitConfigUserName
       directives:
