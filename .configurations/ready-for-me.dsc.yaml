@@ -15,7 +15,7 @@ properties:
         description: Configure Git
         allowPrerelease: true
       settings:
-        UserName: "dyigitbas"
+        UserName: "sebafo"
         ConfigLocation: "Global"
     ### Git Configure Email
     - resource: GitDsc/GitConfigUserEmail
@@ -23,6 +23,6 @@ properties:
         description: Configure Git
         allowPrerelease: true
       settings:
-        UserEmail: "89029269+dyigitbas@users.noreply.github.com"
+        UserEmail: "72460768+sebafo@users.noreply.github.com"
         ConfigLocation: "Global"
    
